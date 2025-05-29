@@ -1,9 +1,13 @@
+import sys
+print(f"Python executable being used: {sys.executable}")
+print(f"Python version being used: {sys.version}")
+
 import pyautogui
 import time
 import keyboard
 
 counter = 0
-sleepTime = 5
+sleepTime = 1
 
 print("Starting...")
 print("Hold ESC to exit")
@@ -20,8 +24,7 @@ while True:
             time.sleep(sleepTime)
 
     except pyautogui.ImageNotFoundException:
-        print("Button not found. Trying again in 5 seconds...")
+        print(f"Button not found. Trying again in {sleepTime} seconds...")
         pyautogui.moveTo(960, 540)
-        time.sleep(sleepTime)
 
 print("Exiting...")
