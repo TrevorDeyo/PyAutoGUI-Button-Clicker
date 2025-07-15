@@ -38,9 +38,8 @@ pip install pyautogui keyboard
     Execute the script from your terminal:
 
     ```bash
-    python your_script_name.py
+    python autobuttonclicker.py
     ```
-    (Replace `your_script_name.py` with the actual name of your Python file.)
 
 3.  **Monitor the script:**
     The script will start searching for and clicking the button. You'll see messages in your console indicating its progress.
